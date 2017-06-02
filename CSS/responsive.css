@@ -1,0 +1,77 @@
+/*Media Queries*/
+@media only screen and (max-width: 767px) {
+    /* Navigation*/
+    .navbar-default {
+        background-color: white !important;
+        border-color: #E6E6E6;
+    }
+    
+    .navbar-default .navbar-nav>li>a:hover {
+        color: #24D330;
+    }
+
+    .navbar-default .navbar-nav>li>a:focus {
+        color: #24D330;
+    }
+    
+    /*Header*/
+    .header-text, .header-btns {
+        text-align: center;
+    }
+    
+    /*About*/
+    .about-iphone img {
+        width: 100%;
+    }
+    
+    /*Purchase Now*/
+    .purchase-now .col-md-3 {
+        text-align: center;
+        padding-top: 50px;
+    }
+    .btn-purchase-now {
+        margin-top: 20px;
+        margin-left: 16px
+    }
+    
+    /*Latest Items*/
+    .bx-wrapper {
+        margin-left: 0;
+    }
+    
+    /*Counter*/
+    .counter-item {
+        padding: 20px;
+    }
+    
+    /*Available On*/
+    .available-on-item i {
+        padding-top: 50px;
+    }
+    .available-title {
+        text-align: center;
+        
+    }
+    .available-title p {
+        text-align: center;
+        padding-top: 10px;
+    }
+    
+    /*Contact Us*/
+    .contact-us-form .form-control{
+        margin: 0;
+    }
+    .submit-btn {
+        margin: 0;
+    }
+    
+}
+
+/*Medium Devices*/
+@media only screen and (min-width: 992px) {
+    /*OK*/
+}
+/*Large Devices*/
+@media only screen and (min-width: 1200px) {
+    /*OK*/
+}
