@@ -43,6 +43,18 @@ $(document).ready(function () {
     });
 
 });
+
+/*Progressbar Animation*/
+let progress = document.getElementById('progressbar');
+
+let totalHeight = document.body.scrollHeight - window.innerHeight;
+
+window.onscroll = function () {
+    let progressHeight = (window.pageYOffset / totalHeight) * 165;
+    progress.style.height = progressHeight + "%";
+}
+
+
         
 /*Add Smooth Scrolling*/
 
@@ -50,7 +62,7 @@ $(document).ready(function () {
 
     'use strict';
 
-    $('.nav-item, #scroll-to-top,.btn-download,.btn-tour').click(function () {
+    $('.nav-item, #scroll-to-top,.btn-download,.btn-tour,.btn-purchase-now').click(function () {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
             var target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
