@@ -10,10 +10,6 @@ $(document).ready(function () {
 
         if ($(window).scrollTop() < 80) {
 
-            $('.navbar').css({
-                'margin-top': '-100px',
-                'opacity': '0'
-            });
 
             $('.navbar-default').css({
                 'background-color': 'rgba(59,59,59,0)'
@@ -92,6 +88,22 @@ $(document).ready(function () {
         $(this).parent().addClass("active");
 
     });
+});
+
+
+/*Mobile Collapse Menu*/
+$(document).ready(function(){
+    'use strict';
+    
+     $ ('a.nav-item').click(function(){
+         $('.navbar-collapse').slideUp();
+     })            
+    });
+
+$(document).ready(function(){
+    $('.navbar-toggle').click(function(){
+        $('.navbar-collapse').slideDown();
+    })
 });
 
 /*Highlight Menu Item On Scroll*/

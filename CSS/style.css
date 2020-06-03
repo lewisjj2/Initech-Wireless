@@ -81,6 +81,7 @@ p {
     width: 10px;
     background: #24D330;
     animation: animate 5s linear infinite;
+    z-index: 100;
 }
 
 @keyframes animate {
@@ -165,6 +166,10 @@ p {
 .navbar-default .navbar-nav>.active>a:hover .navbar-default .navbar-nav>.active>a:focus {
     background-color: transparent;
     color: #24D330;
+}
+
+.navbar-collapse {
+    transition: ease .3s;
 }
 
 
